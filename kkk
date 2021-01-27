@@ -1,0 +1,83 @@
+
+//error in loading local json !!!!
+// fetch(
+//         'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
+//     )
+//     .then(function(res) {
+//         return res.json();
+//     })
+//     .then(function(loadedQ) {
+//         console.log(loadedQ);
+
+//         // question = loadedQ;
+//         // startQuiz();
+//     })
+//     .catch(function(e) {
+//         console.error('failed to load');
+//     });
+
+// fetch(
+//         'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
+//     )
+//     .then(function(res) {
+//         return res.json();
+//     })
+//     .then(function(loadedQ) {
+//             console.log(loadedQ);
+//             questions = loadedQ.results.map(function(loadedQ) {
+//                     const formattedQuestion = {
+//                         question: loadedQ.question
+//                     };
+
+//                     const answerChoices = [...loadedQ.incorrect_answers];
+//                     formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+//                     answerChoices.splice(
+//                         formattedQuestion.answer - 1,
+//                         0,
+//                         loadedQ.correct_answer
+//                     );
+//                     for (let i = 0; i < 4; i++) {
+//                         formattedQuestion['choice' + (i + 1)] = answerChoices[i];
+//                     }
+
+
+//                     return formattedQuestion;
+//                     // question = loadedQ;
+//                     startQuiz();
+//                 })
+//                 .catch(function(e) {
+//                     console.error('failed to load');
+//                 });
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Congrats!</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="username" />
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+            Save
+          </button>
+            </form>
+            <a class="btn" href="/game.html">Play Again</a>
+            <a class="btn" href="/">Go Home</a>
+        </div>
+    </div>
+    <script src="end.js"></script>
+</body>
+
+</html> -->
